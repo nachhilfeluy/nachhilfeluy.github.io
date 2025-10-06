@@ -15,10 +15,11 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
+            background: #faf8f5;
         }
         
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #8b6f47 0%, #6b5638 100%);
             color: white;
             padding: 4rem 2rem;
             text-align: center;
@@ -43,16 +44,17 @@
         .section {
             margin: 3rem 0;
             padding: 2rem;
-            background: #f8f9fa;
+            background: #fff;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(139, 111, 71, 0.15);
+            border: 1px solid #e8dfd0;
         }
         
         .section h2 {
-            color: #667eea;
+            color: #8b6f47;
             margin-bottom: 1.5rem;
             font-size: 1.8rem;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 3px solid #c9a66b;
             padding-bottom: 0.5rem;
         }
         
@@ -64,19 +66,19 @@
         }
         
         .angebot-card {
-            background: white;
+            background: #faf8f5;
             padding: 1.5rem;
             border-radius: 8px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #8b6f47;
         }
         
         .angebot-card h3 {
-            color: #764ba2;
+            color: #6b5638;
             margin-bottom: 0.5rem;
         }
         
         .preis {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #8b6f47 0%, #6b5638 100%);
             color: white;
             padding: 2rem;
             border-radius: 10px;
@@ -92,7 +94,7 @@
         }
         
         .kontakt-info {
-            background: white;
+            background: #faf8f5;
             padding: 1.5rem;
             border-radius: 8px;
             margin-top: 1rem;
@@ -116,7 +118,7 @@
         }
         
         .kontakt-item a {
-            color: #667eea;
+            color: #8b6f47;
             text-decoration: none;
         }
         
@@ -125,7 +127,7 @@
         }
         
         .uber-mich {
-            background: white;
+            background: #faf8f5;
             padding: 1.5rem;
             border-radius: 8px;
             margin-top: 1rem;
@@ -133,7 +135,7 @@
         }
         
         footer {
-            background: #2d3748;
+            background: #6b5638;
             color: white;
             text-align: center;
             padding: 2rem;
@@ -142,18 +144,18 @@
         
         .cta-button {
             display: inline-block;
-            background: #667eea;
+            background: #8b6f47;
             color: white;
             padding: 1rem 2rem;
             border-radius: 5px;
             text-decoration: none;
             margin-top: 1rem;
-            transition: transform 0.3s;
+            transition: transform 0.3s, background 0.3s;
         }
         
         .cta-button:hover {
             transform: translateY(-2px);
-            background: #764ba2;
+            background: #6b5638;
         }
         
         @media (max-width: 768px) {
@@ -170,7 +172,7 @@
 <body>
     <header>
         <h1>Nachhilfe Luy</h1>
-        <p>Professionelle Mathematik-Nachhilfe für deinen Erfolg</p>
+        <p>Mathe verstehen - mit Geduld und Leidenschaft zum Erfolg</p>
     </header>
     
     <div class="container">
@@ -179,15 +181,15 @@
             <div class="angebot-grid">
                 <div class="angebot-card">
                     <h3>Alle Klassenstufen</h3>
-                    <p>Von der Grundschule bis zum Abitur - individuell angepasst an dein Niveau und deine Bedürfnisse.</p>
+                    <p>Von den ersten Grundlagen bis zum Abitur begleite ich dich Schritt für Schritt. Jeder lernt in seinem eigenen Tempo - und genau da hole ich dich ab.</p>
                 </div>
                 <div class="angebot-card">
-                    <h3>Abitur-Kurse</h3>
-                    <p>Spezielle Vorbereitung auf die Abiturprüfung mit gezieltem Training der prüfungsrelevanten Themen.</p>
+                    <h3>Abitur-Vorbereitung</h3>
+                    <p>Gemeinsam bereiten wir dich gezielt auf deine Abiturprüfung vor. Mit praxisnahen Übungen und verständlichen Erklärungen schaffst du das!</p>
                 </div>
                 <div class="angebot-card">
                     <h3>Kleingruppen</h3>
-                    <p>Effektives Lernen in kleinen Gruppen - so profitierst du vom Austausch mit anderen und günstigen Preisen.</p>
+                    <p>In kleinen Gruppen lernt es sich oft leichter - ihr könnt euch gegenseitig unterstützen und profitiert von einem fairen Preis.</p>
                 </div>
             </div>
         </div>
@@ -200,18 +202,21 @@
             </div>
         </div>
         
-<div class="uber-mich" style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
-    <img src="BUND (1).jpg" alt="Nachhilfe Luy" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-    <div style="flex: 1; min-width: 250px;">
-        <p><strong>Erfahrener Nachhilfelehrer & Doktorand</strong></p>
-        <p style="margin-top: 1rem;">Mit meiner langjährigen Erfahrung als Nachhilfelehrer und meinem tiefgreifenden mathematischen Verständnis als Doktorand helfe ich dir, Mathe zu verstehen und deine Ziele zu erreichen. Ob Grundlagen festigen oder Abitur-Vorbereitung - gemeinsam schaffen wir das!</p>
-    </div>
-</div>
+        <div class="section">
+            <h2>Über mich</h2>
+            <div class="uber-mich" style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+                <img src="BUND (1).jpg" alt="Nachhilfe Luy" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 10px rgba(139, 111, 71, 0.3);">
+                <div style="flex: 1; min-width: 250px;">
+                    <p><strong>Erfahrener Nachhilfelehrer & Doktorand</strong></p>
+                    <p style="margin-top: 1rem;">Mathe muss nicht kompliziert sein! Als Doktorand und erfahrener Nachhilfelehrer liegt mir besonders am Herzen, Mathematik verständlich und praxisnah zu vermitteln. Mit Geduld und individueller Betreuung helfe ich dir, deine Ziele zu erreichen - egal ob es darum geht, Grundlagen zu festigen oder dich optimal aufs Abitur vorzubereiten. Gemeinsam finden wir den Weg, der zu dir passt!</p>
+                </div>
+            </div>
+        </div>
         
         <div class="section">
             <h2>Kontakt</h2>
             <div class="kontakt-info">
-                <p style="margin-bottom: 1.5rem;">Interesse? Melde dich gerne für ein unverbindliches Erstgespräch!</p>
+                <p style="margin-bottom: 1.5rem;">Du hast Interesse oder Fragen? Melde dich gerne - ich freue mich auf deine Nachricht!</p>
                 <div class="kontakt-item">
                     <a href="mailto:nachhilfeluy@gmail.com">nachhilfeluy@gmail.com</a>
                 </div>
