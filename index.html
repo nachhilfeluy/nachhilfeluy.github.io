@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachhilfe Luy - Mathematik für alle Klassenstufen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .angebot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .angebot-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .angebot-card h3 {
+            color: #764ba2;
+            margin-bottom: 0.5rem;
+        }
+        
+        .preis {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .preis strong {
+            font-size: 2rem;
+            display: block;
+            margin-top: 0.5rem;
+        }
+        
+        .kontakt-info {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        
+        .kontakt-item {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+        
+        .kontakt-item::before {
+            content: "📧";
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+        
+        .kontakt-item.telefon::before {
+            content: "📱";
+        }
+        
+        .kontakt-item a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .kontakt-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .uber-mich {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: transform 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            background: #764ba2;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nachhilfe Luy</h1>
+        <p>Professionelle Mathematik-Nachhilfe für deinen Erfolg</p>
+    </header>
+    
+    <div class="container">
+        <div class="section">
+            <h2>Mein Angebot</h2>
+            <div class="angebot-grid">
+                <div class="angebot-card">
+                    <h3>Alle Klassenstufen</h3>
+                    <p>Von der Grundschule bis zum Abitur - individuell angepasst an dein Niveau und deine Bedürfnisse.</p>
+                </div>
+                <div class="angebot-card">
+                    <h3>Abitur-Kurse</h3>
+                    <p>Spezielle Vorbereitung auf die Abiturprüfung mit gezieltem Training der prüfungsrelevanten Themen.</p>
+                </div>
+                <div class="angebot-card">
+                    <h3>Kleingruppen</h3>
+                    <p>Effektives Lernen in kleinen Gruppen - so profitierst du vom Austausch mit anderen und günstigen Preisen.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Preise</h2>
+            <div class="preis">
+                Unterricht in der Kleingruppe
+                <strong>ab 15€ pro Stunde</strong>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Über mich</h2>
+            <div class="uber-mich">
+                <p><strong>Erfahrener Nachhilfelehrer & Doktorand</strong></p>
+                <p style="margin-top: 1rem;">Mit meiner langjährigen Erfahrung als Nachhilfelehrer und meinem tiefgreifenden mathematischen Verständnis als Doktorand helfe ich dir, Mathe zu verstehen und deine Ziele zu erreichen. Ob Grundlagen festigen oder Abitur-Vorbereitung - gemeinsam schaffen wir das!</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Kontakt</h2>
+            <div class="kontakt-info">
+                <p style="margin-bottom: 1.5rem;">Interesse? Melde dich gerne für ein unverbindliches Erstgespräch!</p>
+                <div class="kontakt-item">
+                    <a href="mailto:nachhilfeluy@gmail.com">nachhilfeluy@gmail.com</a>
+                </div>
+                <div class="kontakt-item telefon">
+                    <a href="tel:01601529102">0160 152 9102</a>
+                </div>
+                <a href="mailto:nachhilfeluy@gmail.com" class="cta-button">Jetzt Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Nachhilfe Luy - Alle Rechte vorbehalten</p>
+    </footer>
+</body>
+</html>
